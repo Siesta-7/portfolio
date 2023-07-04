@@ -1,0 +1,42 @@
+@import "../../global.scss";
+
+.about{
+    display: flex; 
+    flex-direction: column;
+    align-items: center;
+    
+    @include mobile{
+        padding-top: 10px;
+    }
+    
+    h1{
+        font-size: 40px;
+        margin-top: 40px;
+
+        @include mobile{
+        margin-top: 20px;
+        font-size: 40px;
+        }
+      
+    }
+    .info{
+        margin-top: 40px;
+        padding: 0 130px;
+           
+       @include mobile{
+        
+        padding: 10px;
+       }
+        p{
+             
+            
+            text-align: center;       
+            font-size: 25px;
+            line-height: 50px;
+            
+        }
+    }
+    
+
+    
+}

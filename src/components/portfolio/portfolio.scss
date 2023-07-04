@@ -1,0 +1,192 @@
+@import "../../global.scss";
+
+.portfolio{
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;  
+
+    h1{
+        font-size: 40px;
+        margin-top: 10px;
+        @include mobile{
+            margin-top: 0;
+            height: 50px;
+            font-size: 35px;
+        }
+    }
+
+    .container{
+        width: 90%;
+        height: 400px;
+        margin-top: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        @include mobile{
+            margin-top: 20px;
+            height: 100%;
+            padding: 15px 0;
+        }
+
+        .item{
+            width: 300px;
+            height: 300px;
+            border-radius: 20px;
+            margin: 15px 30px;
+            position: relative;
+            display: flex;
+            justify-content: center;
+            transition: all 1s ease;
+            cursor: pointer;
+            box-shadow: 0px 0px 15px -8px black;
+            transition: all 0.7s ease;
+
+            @include mobile{
+                width: 300px;
+                height: 225px;
+            }
+           
+            img{
+               height: 100%;
+               width: 100%;
+               object-fit: cover;
+               z-index: 1;             
+            
+            }
+            h3{
+                position: absolute;
+                font-style: 20px;
+                color: white;
+                padding: 10px 20px;
+                transition: all 0.7s ease;
+            }
+            span{
+                position: absolute;
+                transition: all 0.7s ease;
+                color: orange;     
+                padding-top: 280px;
+
+                @include mobile{
+                    padding-top: 180px;
+                }
+                
+            }
+
+            &:hover{
+                background-color: $maincolor;
+                transform: scale(1.07);
+            
+                img{
+                    z-index: 0;
+                    opacity: 0.2;
+                    
+                }
+                h3{
+                    padding: 40px 20px;
+                }
+                span{
+                    padding-top: 260px;
+                    @include mobile{
+                        padding-top: 160px;
+                    }
+                }
+                
+            }     
+            
+        }
+        .detail{
+            background-color: rgba(0, 0, 0, 70%);
+            position:absolute;      
+            height: 100vh;
+            width: 100vw;
+            z-index: 3;
+            opacity: 0;
+            animation: popup 0.5s forwards;
+            padding: 20px;
+            @keyframes popup {
+                to{
+                    opacity: 1;
+                }
+            }
+
+            .icon{
+                position: absolute;
+                top: 50px;
+                right: 50px;
+                color: white;
+                width: 40px;
+                height: 40px;
+                cursor: pointer;
+
+                &:hover{
+                    opacity: 0.5;
+                }
+                @include mobile{
+                    top: 60px;
+                    right: 30px;
+                }
+            }
+            .card{
+            margin:40px 400px;
+            background-color: white;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 20px;
+            border-radius: 20px;
+            height: 450px;
+            padding: 15px 30px; 
+            @include mobile{
+                margin: 100px 20px 0px;
+            }
+            
+            .image{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 230px;
+                height: 230px;
+                border-radius: 20px;
+                @include mobile{
+                    width: 200px;
+                    height: 200px;
+                }
+                
+                img{
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+
+                }
+            }
+            p{
+                color: rgb(41, 41, 75);
+                line-height: 25px;
+                
+                
+            }
+            button{
+              
+                padding: 10px 12px;
+                font-size: 16px;
+                border-radius: 20px;
+                background-color: orange;
+                color: white;
+                cursor: pointer;
+                border: none;
+                font-weight: 400;
+                margin-bottom: 10px;
+
+                &:hover{
+                    font-weight: 500;
+                    transform: scale(1.03);
+                }
+            }
+            
+        }
+    }
+   
+}
+}
