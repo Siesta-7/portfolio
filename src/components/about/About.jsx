@@ -6,8 +6,8 @@ function About() {
     
 
    return (
-    <div className='about' >
-        <h1 id='about'>About Me</h1>
+    <div className='about' id='about' >
+        <h1 >About Me</h1>
         <AnimatedShapes/>
       
         <div className="info">

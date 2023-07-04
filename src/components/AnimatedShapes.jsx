@@ -6,7 +6,7 @@ const Square = styled.div`
     background-color: #4e6bff;
     opacity:0.7;
     position:absolute;
-    top:500px;
+    top:800px;
     left:-60px;
     z-index:-1;
     animation: square 25s linear alternate infinite;
@@ -24,7 +24,7 @@ const Rectangular = styled.div`
     background-color: crimson;
     opacity:0.7;
     position:absolute;
-    top:1000px;
+    top:1200px;
     right:-50px;
     z-index:-1;
     animation: rectangular 25s linear alternate infinite;
