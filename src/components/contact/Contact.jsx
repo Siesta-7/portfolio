@@ -102,7 +102,7 @@ useEffect(() => {
           </form>
           {check.error ? "Something went wrong I'll be working on ASAP" : (
            
-              check.success && <span >Your message sent successfully I'll reply ASAP :)</span>
+              check.success && <span >Your message has been sent successfully. I'll reply ASAP :)</span>
             
           )}
         </motion.div>

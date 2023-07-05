@@ -3,7 +3,7 @@ export const data = [
       id: 1,
       title: "SiestaStore",
       img: "assets/store.svg",
-      info:"SiestaStore is e-commerce website. It's a SaaS based project. In database I've used Strapi framework and at the front side I've used of React.js and Redux.js.",
+      info:"SiestaStore is an e-commerce website. It's a SaaS based project. In database I've used Strapi framework and at the front side I've used of React.js and Redux.js.",
       github:"https://github.com/Siesta-7/SaaS-Strapi-Shopping-Website-with-React.js"
     },
     {
