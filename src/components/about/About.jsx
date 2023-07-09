@@ -1,5 +1,5 @@
 import "./about.scss"
-import AnimatedShapes from "../AnimatedShapes.jsx"
+
 
 
 function About() {
@@ -7,8 +7,11 @@ function About() {
 
    return (
     <div className='about' id='about' >
-        <h1 >About Me</h1>
-        <AnimatedShapes/>
+        <div className="word-waves">
+            <h1>About Me</h1>
+            <h1>About Me</h1>
+        </div>
+       
       
         <div className="info">
             
